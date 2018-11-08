@@ -1,0 +1,11 @@
+schema:
+  registry:
+    url: http://127.0.0.1:8081
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: 127.0.0.1:9092
+      auto-offset-reset: earliest
+      group-id: group01
+      key-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
